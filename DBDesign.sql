@@ -45,6 +45,7 @@ create table service(
 	dorm_id varchar(8),
 	phone_number varchar(15),
 	information varchar(40),
+	freetime varchar(15),
 	creatime TIMESTAMP DEFAULT NOW(),
 	evaluate tinyint(1)
 )auto_increment=100;
@@ -54,4 +55,4 @@ create table service(
 
 #插入预置信息：
 
-insert into service values(1,'9B304','176****3397','灯泡坏了',DEFAULT,NULL);
+insert into service values(1,'9B304','176****3397','灯泡坏了','星期四下午',DEFAULT,NULL);
